@@ -1,0 +1,99 @@
+.aboutMeSection{
+    flex-direction: column;
+    display: flex;
+}
+
+.profilePics{
+    height: 210px;
+    /* width: 180px; */
+    background-color:  rgb(128, 65, 65);
+    margin-right: 0;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    filter: hue-rotate(var(--count));
+}
+
+.profileHolder::after{
+    display: none;
+}
+
+.profileHolder{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.aboutMeHeader{
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    margin-right: 14px;
+}
+
+.aboutMeHeader::after{
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: 6px;
+    width: -webkit-fill-available;
+    border-radius: 3px;
+    background-color: var(--lineDivs);
+}
+
+.aboutMeTextDiv{
+    /*background-color: rebeccapurple;*/
+    height: fit-content;
+    min-height: 210px;
+    width: -webkit-fill-available;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.aboutMeContent{
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 21px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    line-height: 21px;
+}
+
+@media screen and (min-width: 695px) {
+    .profileHolder::after{
+        display: block;
+        position: relative;
+        content: "";
+        height: 208px;
+        width: 6px;
+        background-color: var(--lineDivs);
+        border-radius: 3px;
+    }
+
+    .profileHolder{
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .aboutMeSection{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profilePics{
+        height: 210px;
+        /* width: 180px; */
+        background-color:  rgb(128, 65, 65);
+        margin-right: 15px;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+}

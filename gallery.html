@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/gallery.js"></script>
+
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <h1>Gallery: <img src="png/close.png" alt="close" id="close" onclick="closeGallery()"></h1>
+    
+    <div id="contorolHolder">
+        <img style="transform: rotate(180deg);" class="sipky" src="png/sipky.png" alt="sipka" onclick="left()">
+        <div id="imgHolder">
+            <img id="img" src="png/myPhoto.jpg" alt="">
+            <img id="img" src="png/dungeon1.png" alt="">
+            <img id="img" src="png/dungeon2.png" alt="">
+            <img id="img" src="png/dungeon3.png" alt="">
+            <img id="img" src="png/dungeon4.png" alt="">
+            <img id="img" src="png/dungeon5.png" alt="">
+            <img id="img" src="png/dungeon6.png" alt="">
+
+        </div>
+        <img src="png/sipky.png" class="sipky" alt="sipka" onclick="right()">
+    </div>
+
+    <div style="display: flex; align-items: center;justify-content: center;"> 
+        <h2 id="count">0/1</h2>
+    </div>
+</body>
+</html>

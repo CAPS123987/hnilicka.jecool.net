@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/aboutMe.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/galleryOvelay.css">
+    
+    <script src="js/menuScript.js"></script>
+    <script src="js/darkTheme.js"></script>
+    <script src="js/galleryOvelay.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="png/logo 128x128.png">
+    <title>Hnilička</title>
+</head>
+<body class="dark">
+    <header class="onTop" style="white-space: nowrap;">
+        <table class="header">
+            <tr>
+                <td>
+                    <a href="index.html">
+                        <img style="margin-left: 10px" src="png/logo 128x128.png" alt="logo" class="logoImg onTop">
+                    </a>
+                </td>
+
+                <td>
+                    <h1 style="margin-left: 10px;" class="headerText onTop">Jakub Hnilička</h1>
+                </td>
+
+                    
+            </tr>
+                
+        </table>
+        <nav class="pc onTop">
+            <table>
+                <tr class="linkPcTable onTop">
+                    <td>
+                        <a class="linksPC" href="#aboutme">About Me</a>
+                    </td>
+                    <td>
+                        <a class="linksPC" href="#links">Links</a>
+                    </td>
+                    <td>
+                        <a class="linksPC" href="#projects">Projects</a>
+                    </td>
+                    <td>
+                        <input class="linksPC checkTheme" type="checkbox" onclick="switchTheme(this)">
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <button class="mobileMenuBtn onTop" onclick="menuOperation()">
+    </button>
+    <nav class="mobile onTop">
+
+        <h2 class="mobile">Menu:</h2>
+        <ul> 
+            <li class="linksList">
+                <a onclick="menuOperation()" class="linksMobile" href="#aboutme">About Me</a>
+            </li>
+
+            <li class="linksList">
+                <a onclick="menuOperation()" class="linksMobile" href="#links">Links</a>
+            </li>
+
+            <li class="linksList">
+                <a onclick="menuOperation()" class="linksMobile" href="#projects">Projects</a>
+            </li>
+            <input class="checkTheme" type="checkbox" onclick="switchTheme(this)">
+        </ul>
+
+    </nav>
+    <main class="">
+
+        <h2 class="content" id="aboutme">About Me:</h2>
+
+        <div class="contentPara aboutMeSection">
+
+            <div class="profileHolder">
+                <img class="profilePics" src="png/myPhoto.jpg" alt="profil" onclick="openGallery(0)">
+            </div>
+
+            <div class="aboutMeTextDiv">
+                <h4 class="aboutMeHeader" id="age">Jmenuji se Jakub Hnilička, je mi x let. (We were unable to load date)</h4>
+                <script>
+                    age();
+                </script>
+                
+                <div id="agge"></div>
+                <p class="aboutMeContent">
+                    Jsem prvním rokem student INFISu. <br>
+                    Mám základní zkušenosti s programováním webových stránek. <br>
+                    Přibližně rok se zajímám o programování v Javě (Github je v sekci <a href="#links">links</a>). 
+                    Již jsem vytvořil pár projektů jako je například <a href="#dungeon">Dungeon generator</a>, což je plugin pro Minecraft server který provozujeme s kamarády.
+                    Také jsem udělal addony, do populárního Minecraft pluginu SlimeFun, Nukleární reaktor a další. <br>
+                    Nerad chodím ven, preferuji být doma a pít kávu :) <img src="gif/coffe.gif" alt="coffeGif" style="height: 80px; display: flex;">
+                </p>
+            </div>
+            
+        </div>
+
+        <hr class="sectionHr">
+
+        <h2 class="content" id="links">Links:</h2>
+
+        <div class="contentPara linkHolder">
+
+            <section class="cyberPunk">
+                <div class="interCyberPunk">
+                    <h3 class="cyberPunkHeader gitHeader">GITHUB</h3>
+                    <h6 style="margin-top: 0; margin-left: 9px;">link to my github <br>link to my github <br>link to my github <br>link to my github <br>link to my github <br>link to my github <br>link to my github <br>link to my github <br>link to my github <br></h6>
+                </div>
+                <a class="generalLink github" href="https://github.com/CAPS123987" target="_blank">
+                    <div>
+                        <p class="linkText githubText">Github</p>
+                    </div>
+                </a>
+            </section>
+            
+            <section class="cyberPunk">
+                <div class="interCyberPunk">
+                    <h3 class="cyberPunkHeader instHeader">INSTAGRAM</h3>
+                    <h6 style="margin-top: 0; margin-left: 9px;">link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br>link to my instagram<br></h6>
+                </div>
+                <a class="generalLink instagram" href="https://instagram.com/caps123987" target="_blank">
+                    <p class="linkText instagramText">Instagram</p>
+                </a>
+            </section>
+
+            <section class="cyberPunk">
+                <div class="interCyberPunk">
+                    <h3 class="cyberPunkHeader scratchHeader">SCRATCH</h3>
+                    <h6 style="margin-top: 0; margin-left: 9px;">link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br>link to my scratch<br></h6>
+                </div>
+                <a class="generalLink scratch" href="https://scratch.mit.edu/users/caps123987/" target="_blank">
+                    <p class="linkText scratchText">Scratch</p>
+                </a>
+            </section>
+        </div>
+
+        <hr class="sectionHr">
+
+        <h2 class="content" id="projects">Projects:</h2>
+
+        <div class="contentPara projectsDiv">
+            <div class="projectsCont" >
+                <h4 class="aboutMeHeader" id="dungeon" style="scroll-margin-top: 130px;">Dungeon Generator</h4>
+                <section class="projectSection">
+                    
+                    <div class="prjWindow">
+                        <div class="projectImgHolder">
+                            <img class="prj1 projectPic" src="png/dungeon1_small.png" alt="dungeon1.png" onclick="openGallery(1)">
+                        </div>
+                        <div class="verticalLine prj1Line"></div>
+                        <p>Dungeon generátor je asi můj pátý celkový projekt a jeden z největších co jsem kdy udělal. 
+                            Vznikl za účelem vytvoření minihry na našem Minecraft serveru Crystal Caverns. 
+                            Vznikl tak že mi jednoho dne na discord napsal můj kamarád s tím, jestli nechci vyzkoumat, jak funguje generace dungeonů. 
+                            Nadchlo mě to a začal jsem hned pracovat. 
+                            Po 2 dnech jsem měl první verzi. 
+                            Nefungovala moc dobře, ani neuměla jít do výšky a sekala se, ale fungovala. 
+                            Ukázal jsem to kamarádovi a on byl nadšený. 
+                            Během prázdnin jsem tento plugin postupně upravoval a vylepšoval. 
+                            Na začátku jsem vyměnil, jakým způsobem algoritmus detekuje, jestli může generovat místnost a jestli je pro ni místo. 
+                            Starší verze měla list, ve kterém byly všechny obsazené bloky a když se místnost generovala tak se všechny bloky v místnosti přidali do listu. 
+                            Tento způsob byl ale velmi pomalý, jelikož list nebyl dost výkonný pro takovou práci, a tak jsem ho nahradil. 
+                            V další verzi používala bloky v Minecraft světě, které jsou mnohem rychlejší ale stále se sekají, proto se i v pozdějších verzích tento systém nahrazuje. 
+                            Další věc, kterou jsem vylepšil byla generace místností. 
+                            Protože jsem měl rychlejší a lepší způsob zapisování bloků, tak jsem mohl generovat místnosti i do výšky.
+                    
+                        </p>
+                    </div>
+
+                    <div class="prjWindow">
+                        <p>
+                            Poté co jsem měl relativně spolehlivý algoritmus, začal jsem přidávat menší věci jako možnost mít více variací místností a třeba i administrátorské nástroje. 
+                            Přidal jsem také to, že místnosti mají určitou šanci, aby se vygenerovali. 
+                            Bohužel algoritmus přestal být dostatečně účinný a často se stávalo že spadl server a celkově se vše zasekávalo. 
+                            Proto jsem se rozhodl, že místo toho abych pro detekci, místa pro místnost, používal bloky ve světě, použiji 3D pole. 
+                            Toto pole je velmi rychlé a neseká hráče, jelikož nezasílá vizuální updaty. 
+                            Zároveň, jelikož nepoužívá bloky ve světě, mohl jsem celou propočítávají část přesunout do asynchronního procesu, což znamená že server generuje jen když má kapacitu. 
+                            Bohužel toto pole má jednu nevýhodu, a to že je velmi náročné na paměť, proto generuji dungeony na mém počítači, kde server má 24 gb ram, narozdíl od našeho serveru se 4 gb ram.
+
+                        </p>
+                        <div class="verticalLine prj1Line"></div>
+                        <div class="projectImgHolder">
+                            <img class="prj2 projectPic" src="png/dungeon2_small.png" alt="dungeon2.png" onclick="openGallery(2)">
+                        </div>
+                    </div>
+                    
+                    <div class="prjWindow">
+                        <div class="projectImgHolder">
+                            <img class="prj3 projectPic" src="png/dungeon3_small.png" alt="dungeon3.png" onclick="openGallery(3)">
+                        </div>
+                        <div class="verticalLine prj1Line"></div>
+                        <p>Po nějaké době jsem se rozhodl že by bylo dobré mít i nějaké předměty, které by mohli hráči najít. 
+                            Proto jsem vytvořil systém, který generuje předměty do truhel. 
+                            Chtěl jsem, aby byly předměty náhodné a zároveň aby se po určité době obnovily. 
+                            Jediné řešení, které mě napadlo bylo poslouchat, když hráč otevře truhlu a pokud již není vygenerovaná, tak se vygeneruje nový inventář. 
+                            Inventář se následně uloží do HashMapy zároveň s lokací, kde se nachází a po určité době se smaže. 
+                            Generace itemů byla jednoduchá, jednotlivé itemy s jejich šancemi se ukládají do souboru a při generaci inventáře se náhodně vybere určitý počet itemů a náhodně se vloží do inventáře. 
+                            Také jsem dělal menší systémy jako party systém kdy se hráč může připojit k jinému hráči a můžou spolu hrát. 
+                            Další věc, kterou jsem přidal byl systém pro vytváření boss místností, ale není ještě plně implementován.
+
+                        </p>
+                    </div>
+
+                </section>
+
+                <h4 class="aboutMeHeader" id="custBlock" style="scroll-margin-top: 130px;">Custom block</h4>
+                <section class="projectSection">
+                    
+                    <div class="prjWindow">
+                        <div class="projectImgHolder">
+                            <img class="prj1 projectPic" src="png/dungeon1_small.png" alt="dungeon1.png" onclick="openGallery(1)">
+                        </div>
+                        <div class="verticalLine prj1Line"></div>
+                        <p>Custom block plugin je další můj projekt, který jsem vytvořil pro účely našeho serveru, ale možná ho zpřístupním veřejnosti. 
+                            Účel tohoto pluginu je vytvořit vlastní bloky, které budou mít speciální vzhled a funkce.
+                    
+                        </p>
+                    </div>
+                </section>
+                <hr class="projectHr">
+                That is everythink for now :)
+            </div>
+        </div>
+        <div class="contentPara projectsDiv">
+            <h4 class="aboutMeHeader" style="scroll-margin-top: 130px;">Pics</h4>
+            <grid id="pics" style="display: flex;
+            gap: 10px;
+            grid-template-columns: max-content;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;">
+                <img src="png/myPhoto.jpg" alt="" onclick="openGallery(0)">
+                <img src="png/dungeon1_small.png" alt="" onclick="openGallery(1)">
+                <img src="png/dungeon2_small.png" alt="" onclick="openGallery(2)">
+                <img src="png/dungeon3_small.png" alt="" onclick="openGallery(3)">
+                <img src="png/dungeon4_small.png" alt="" onclick="openGallery(4)">
+                <img src="png/dungeon5_small.png" alt="" onclick="openGallery(5)">
+                <img src="png/dungeon6_small.png" alt="" onclick="openGallery(6)">
+            </grid>
+        </div>
+            
+    </main>
+    <footer>Jakub Hnilička &copy
+
+        <!-- add testGallery.html as embet -->
+        <iframe id="galleryOvelay" src="gallery.html" frameborder="0" width="100%" height="100%"></iframe>
+
+
+    </footer>
+ 
+</body>
+</html>

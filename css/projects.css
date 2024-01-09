@@ -1,0 +1,116 @@
+.projectsDiv{
+    min-height: 320px;
+    /* background-color: red; */
+    display: flex;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: black;
+    flex-direction: column;
+}
+.projectsCont{
+    margin: 7px 7px 7px 7px;
+}
+.prjWindow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.projectImgHolder{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+.verticalLine{
+    display: none;
+}
+.projectSection{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectPic{
+    background-color:  rgb(128, 65, 65);
+    margin-right: 0;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.prj1{
+    height: 210px;
+}
+.prj2{
+    height: 210px;
+}
+.prj3{
+    height: 210px;
+}
+
+.projectHr{
+    height: 5px;
+    border-style: none;
+    background-color: var(--lineDivs);
+    border-radius: 3px;
+    width: -webkit-fill-available;
+}
+
+@media screen and (min-width: 950px) {
+    .verticalLine{
+        display: block;
+        position: relative;
+        content: "";
+        width: 6px;
+        margin-right: 10px;
+        margin-left: 10px;
+        min-width: 6px;
+        background-color: var(--lineDivs);
+        border-radius: 3px;
+    }
+
+    .prj1Line{
+        height: 208px;
+    }
+
+    .projectImgHolder{
+        margin-bottom: 0;
+    }
+
+    .projectPic{
+        background-color:  rgb(128, 65, 65);
+        border-radius: 6px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+
+    .prjWindow{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 544px) {
+    .prj1{
+        height: unset;
+        width: calc(70vw - 20px);
+    }
+    .prj2{
+        height: unset;
+        width: calc(70vw - 20px);
+    }
+    .prj3{
+        height: unset;
+        width: calc(70vw - 20px);
+    }
+}
