@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="css/aboutMe.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/galleryOvelay.css">
+    <link rel="stylesheet" href="css/bgStyle.css">
     
+    <script type="text/javascript" src="https://www.navatisk.cz/wp-content/themes/bridge/js/plugins/TweenLite.min.js?ver=6.1.4" id="TweenLite-js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollToPlugin3.min.js"></script>
+
     <script src="js/menuScript.js"></script>
     <script src="js/darkTheme.js"></script>
     <script src="js/galleryOvelay.js"></script>
+    <!-- <script src="js/smoothScroll.js"></script> -->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +30,11 @@
     <title>Hnilička</title>
 </head>
 <body class="dark">
+    <div id="background">
+        <div class="bgCircle"></div>
+        <div class="bgCircle"></div>
+    </div>
+
     <header class="onTop" style="white-space: nowrap;">
         <table class="header">
             <tr>
@@ -89,7 +103,7 @@
                 <img class="profilePics" src="png/myPhoto.jpg" alt="profil" onclick="openGallery(0)">
             </div>
 
-            <div class="aboutMeTextDiv">
+            <div class="aboutMeTextDiv bgBlur">
                 <h4 class="aboutMeHeader" id="age">Jmenuji se Jakub Hnilička, je mi x let. (We were unable to load date)</h4>
                 <script>
                     age();
@@ -151,7 +165,7 @@
 
         <h2 class="content" id="projects">Projects:</h2>
 
-        <div class="contentPara projectsDiv">
+        <div class="contentPara projectsDiv bgBlur">
             <div class="projectsCont" >
                 <h4 class="aboutMeHeader" id="dungeon" style="scroll-margin-top: 130px;">Dungeon Generator</h4>
                 <section class="projectSection">
@@ -233,7 +247,7 @@
                 That is everythink for now :)
             </div>
         </div>
-        <div class="contentPara projectsDiv">
+        <div class="contentPara projectsDiv bgBlur">
             <h4 class="aboutMeHeader" style="scroll-margin-top: 130px;">Pics</h4>
             <grid id="pics" style="display: flex;
             gap: 10px;
@@ -262,6 +276,7 @@
 
 
     </footer>
- 
+    
+    <script>loadState();</script>
 </body>
 </html>
